@@ -28,7 +28,7 @@ function Navbar() {
 
         {/* Menu */}
         <ul
-         className={`
+          className={`
     w-full
     md:flex md:w-auto
     ${isOpen ? "block" : "hidden"}
@@ -41,17 +41,17 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/" className="block p-3">
+            <Link to="/storage" className="block p-3">
               Bodegas
             </Link>
           </li>
           <li>
-            <Link to="/" className="block p-3">
+            <Link to="/inventory" className="block p-3">
               Inventario
             </Link>
           </li>
           <li>
-            <Link to="/" className="block p-3">
+            <Link to="/login" className="block p-3">
               Login
             </Link>
           </li>
