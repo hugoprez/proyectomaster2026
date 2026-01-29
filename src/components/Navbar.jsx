@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { CiUser } from "react-icons/ci";
+import { MdOutlineInventory } from "react-icons/md";
+import { RiStore3Fill } from "react-icons/ri";
+import { CiHome } from "react-icons/ci";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,23 +40,24 @@ function Navbar() {
       `}
         >
           <li>
-            <Link to="/" className="block p-3">
-              Inicio
+            <Link to="/" className="flex items-center gap-2 p-3">
+              Inicio <CiHome />
             </Link>
           </li>
           <li>
-            <Link to="/storage" className="block p-3">
-              Bodegas
+            <Link to="/storage" className="flex items-center gap-2 p-3">
+              Bodegas <RiStore3Fill />
             </Link>
           </li>
           <li>
-            <Link to="/inventory" className="block p-3">
-              Inventario
+            <Link to="/inventory" className="flex items-center gap-2 p-3">
+              Inventario <MdOutlineInventory />
             </Link>
           </li>
           <li>
-            <Link to="/login" className="block p-3">
+            <Link to="/login" className="flex items-center gap-2 p-3">
               Login
+              <CiUser />
             </Link>
           </li>
         </ul>
